@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/roles")
-@CrossOrigin
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class RoleController {
     @Autowired
